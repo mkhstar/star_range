@@ -21,8 +21,12 @@ Rust has got a basic ``..`` iterator syntax but it is difficult to use if you wa
 ``StarRange<T>`` struct that implements Iterator
 
 ### Usage 
+
+
+Since it is not yet published to cargo, you can download the lib.rs file to you src directory and rename it to star_range.rs
+
 ```rust
-extern crate star_range;
+mod star_range;
 use star_range::range;
 
 for x in range(1, 10, 2) {

@@ -49,6 +49,21 @@ impl Iterator for StarRange<f64> {
     }
 }
 
+/// Creates range
+/// # Examples
+/// for x in range(1, 10, 2) {
+/// 	println!("{}", x); 
+/// 	// Prints
+/// 	/*
+/// 	1
+/// 	3
+/// 	5
+/// 	7
+/// 	9
+/// 	*/
+/// }
+/// ```
+/// 
 pub fn range<T>(start: T, end: T, step: T) -> StarRange<T> {
     StarRange {
         start: start,
